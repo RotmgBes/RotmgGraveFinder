@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h2><i><centered>Grave Number : Account Number</i></h2>
+<div><small><b>How it Works!</b> :</small><small><small> All Grave yards are public, if you can find the account id number. All this page does, is build the link. </small></small><small><small>Account Ids can be found with web tools</small></small></div>
+<input id="xx" type="Number" value=1>
+<input id="xy" type="Number" value=00000000>
+<script>
+
+function openWin() {
+    var x = document.getElementById("xx").value;
+    var y =document.getElementById("xy").value;
+    window.open("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D'https%3A%2F%2Frealmofthemadgod.appspot.com%2Fchar%2Ffame%3FaccountId%3D" + y + "%26charId%3D" + x +"'&diagnostics=true");
+}
+
+function openWinall() {
+    window.open("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D'https%3A%2F%2Frealmofthemadgod.appspot.com%2Ffame%2Flist%3F%26timespan%3Dall%26charId%3D-1'&diagnostics=true");
+}
+
+function openWinmonth() {
+    window.open("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D'https%3A%2F%2Frealmofthemadgod.appspot.com%2Ffame%2Flist%3F%26timespan%3Dmonth%26charId%3D-1'&diagnostics=true");
+}
+
+function openWinweek() {
+    window.open("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D'https%3A%2F%2Frealmofthemadgod.appspot.com%2Ffame%2Flist%3F%26timespan%3Dweek%26charId%3D-1'&diagnostics=true");
+}
+
+</script>
+</head>
+<style>
+h2
+{
+background-color:#FADF00;
+border:2px solid #FFBA10;
+border-radius:25px;
+}
+
+h2 {text-align:center;}
+
+h6 {text-align:center;}
+
+h5
+{
+background-color:#FFDD00;
+border:4px solid #FFBA10;
+outline:6px solid #FFaa00;
+outline-offset:0px;
+}
+p
+{
+background-color:#FABF00; 
+}
+div
+{
+background-color:#FABF00;
+border:7px solid #FFA000;
+}
+}
+div
+{
+font-family:myFirstFont;
+}
+#yy
+{
+color: #A00000;
+} 
+body
+{
+background-color:#FF8800;
+}
+</style>
+<body>
+<form>
+<input id="yy" type="button" value="Show Grave" onclick="openWin()">
+<h5>You can see the account Id's of anyone on leader the boards</h5>
+<p><small><b>Give it a try? </b><i>All you need to do, is click a button (All, Month, or Week) and look for "FameListElem accountId=_________"</i></small></p>
+<input id="wx" type="button" value="All" onclick="openWinall()">
+<input id="Lo" type="button" value="Month" onclick="openWinmonth()">
+<input id="Lk" type="button" value="Week" onclick="openWinweek()">
+<h6 class="big"><small><small><small><i><b><u>Made by Bes</u></b></i></small></small></small></h6>
+</form>
+</body>
+
+</html>
