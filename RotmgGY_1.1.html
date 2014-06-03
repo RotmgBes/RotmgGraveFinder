@@ -2,7 +2,7 @@
 <html>
 <head>
 <h2><i><centered>Grave Number : Account Number</i></h2>
-<div><small><b>How it Works!</b> :</small><small><small> All Grave yards are public, if you can find the account id number. All this page does, is build the link. </small></small><small><small>Account Ids can be found with web tools</small></small></div>
+<div><small><b>How it Works!</b> :</small><small><small> All Grave yards are public, if you can find the account id number. All this does, is puts together the link. Account Ids can be found with web tools, or by going to other links.</small></small></div>
 <input id="xx" type="Number" value=1>
 <input id="xy" type="Number" value=00000000>
 <script>
@@ -12,24 +12,11 @@ function openWin() {
     var y =document.getElementById("xy").value;
     window.open("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D'https%3A%2F%2Frealmofthemadgod.appspot.com%2Fchar%2Ffame%3FaccountId%3D" + y + "%26charId%3D" + x +"'&diagnostics=true");
 }
-
-function openWinall() {
-    window.open("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D'https%3A%2F%2Frealmofthemadgod.appspot.com%2Ffame%2Flist%3F%26timespan%3Dall%26charId%3D-1'&diagnostics=true");
-}
-
-function openWinmonth() {
-    window.open("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D'https%3A%2F%2Frealmofthemadgod.appspot.com%2Ffame%2Flist%3F%26timespan%3Dmonth%26charId%3D-1'&diagnostics=true");
-}
-
-function openWinweek() {
-    window.open("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D'https%3A%2F%2Frealmofthemadgod.appspot.com%2Ffame%2Flist%3F%26timespan%3Dweek%26charId%3D-1'&diagnostics=true");
-}
-
 </script>
 </head>
 <input id="yy" type="button" value="Show Grave" onclick="openWin()">
 <h5>You can see the account Id's of anyone on leader the boards</h5>
-<p><small><b>Give it a try? </b><i>All you need to do, is click a button (All, Month, or Week) and look for "FameListElem accountId=_________"</i></small></p>
+<p><b><small>Give it a try? </b><i>All you need to do, is click a button (All, Month, or Week) and look for <br><strong><strong>"FameListElem accountId=_________"</strong></strong></i></small></p>
 <style>
 h2
 {
@@ -37,6 +24,20 @@ text-shadow: 1px 0px #ff0000;
 background-color:#FADF00;
 border:2px solid #FFBA10;
 border-radius:25px;
+}
+a:link, a:visited {
+    display: inline;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #98bf29;
+    width: 120px;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    background-color: #7A991A;
 }
 
 h2 {text-align:center;}
@@ -69,30 +70,17 @@ body
 {
 background-color:#FF8800;
 }
+iframe
+{
+background-color:#FF9800;
+border:1px solid #FFA000;
+float:left;
+}
 </style>
 <body>
- 
-<table style="width:500px;" cellpadding="3" cellspacing="3">
-<tr>
-<td colspan="2" style="background-color:#FFA500;">
-<h1 style="margin:0;padding:0;">Realm of the Mad Graves</h1>
-</td>
-</tr>
-
-<tr>
-<td style="background-color:#FFD700;width:100px;vertical-align:top;">
-<b>Leader Boards</b><br>
-<input id="wx" type="button" value="All Time" onclick="openWinall()"><br>
-<input id="Lo" type="button" value="Month" onclick="openWinmonth()"><br>
-<input id="Lk" type="button" value="Week" onclick="openWinweek()">
-</td>
-<td style="background-color:#eeeeee;height:200px;width:400px;vertical-align:top;"></td>
-</tr>
-
-<tr>
-<td colspan="2" style="background-color:#FFA500;text-align:center;">
-<i><small>By Bes   a.k.a.   RotmgBes</i></small></td>
-</tr>
-</table>
+<iframe src="http://i.imgur.com/g2bqjZ2.png" name="iframe_a" frameborder="0"></iframe>
+<p><a href="https://realmofthemadgod.appspot.com/fame/list?timespan=week&charId=-1" target="iframe_a">Weekly</a></p>
+<p><a href="https://realmofthemadgod.appspot.com/fame/list?timespan=month&charId=-1" target="iframe_a">Monthly</a></p>
+<p><a href="https://realmofthemadgod.appspot.com/fame/list?timespan=all&charId=-1" target="iframe_a">All time</a></p>
 </body>
 </html>
