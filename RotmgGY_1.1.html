@@ -27,9 +27,13 @@ function openWinweek() {
 
 </script>
 </head>
+<input id="yy" type="button" value="Show Grave" onclick="openWin()">
+<h5>You can see the account Id's of anyone on leader the boards</h5>
+<p><small><b>Give it a try? </b><i>All you need to do, is click a button (All, Month, or Week) and look for "FameListElem accountId=_________"</i></small></p>
 <style>
 h2
 {
+text-shadow: 1px 0px #ff0000;
 background-color:#FADF00;
 border:2px solid #FFBA10;
 border-radius:25px;
@@ -46,10 +50,7 @@ border:4px solid #FFBA10;
 outline:6px solid #FFaa00;
 outline-offset:0px;
 }
-p
-{
-background-color:#FABF00; 
-}
+
 div
 {
 background-color:#FABF00;
@@ -70,15 +71,28 @@ background-color:#FF8800;
 }
 </style>
 <body>
-<form>
-<input id="yy" type="button" value="Show Grave" onclick="openWin()">
-<h5>You can see the account Id's of anyone on leader the boards</h5>
-<p><small><b>Give it a try? </b><i>All you need to do, is click a button (All, Month, or Week) and look for "FameListElem accountId=_________"</i></small></p>
-<input id="wx" type="button" value="All" onclick="openWinall()">
-<input id="Lo" type="button" value="Month" onclick="openWinmonth()">
-<input id="Lk" type="button" value="Week" onclick="openWinweek()">
-<h6 class="big"><small><small><small><i><b><u>Made by Bes</u></b></i></small></small></small></h6>
-</form>
-</body>
+ 
+<table style="width:500px;" cellpadding="3" cellspacing="3">
+<tr>
+<td colspan="2" style="background-color:#FFA500;">
+<h1 style="margin:0;padding:0;">Realm of the Mad Graves</h1>
+</td>
+</tr>
 
+<tr>
+<td style="background-color:#FFD700;width:100px;vertical-align:top;">
+<b>Leader Boards</b><br>
+<input id="wx" type="button" value="All Time" onclick="openWinall()"><br>
+<input id="Lo" type="button" value="Month" onclick="openWinmonth()"><br>
+<input id="Lk" type="button" value="Week" onclick="openWinweek()">
+</td>
+<td style="background-color:#eeeeee;height:200px;width:400px;vertical-align:top;">Class<br>Stats<br>Image maybe?<br>All in the Grey</td>
+</tr>
+
+<tr>
+<td colspan="2" style="background-color:#FFA500;text-align:center;">
+<i><small>By Bes   a.k.a.   RotmgBes</i></small></td>
+</tr>
+</table>
+</body>
 </html>
