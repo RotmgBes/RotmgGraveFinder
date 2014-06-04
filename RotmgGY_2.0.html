@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<h2><i><centered>Grave Number : Account Number</i></h2>
-<div><small><b>How it Works!</b> :</small><small><small> All Grave yards are public, if you can find the account id number. All this does, is puts together the link. Account Ids can be found with web tools, or by going to other links.</small></small></div>
-<input id="xx" type="Number" value=1>
-<input id="xy" type="Number" value=00000000>
+<h2><i><centered>RotMG Grave Finder!</i></h2>
+<div><small><u><b>How it Works!</b></u> :</small><small><small> All Grave yards are public, if you can find the account id number. All this does, is puts together the link. Account Ids can be found with web tools, or by going to other links.</small></small></div>
+</small>
+<input id="xx" type="Number" value=1><b>Character Id</b><br>
+<input id="xy" type="Number" value=00000000><b>Account Id</b><br>
+<a href="#" id="myLink">Build Link!</a>
+<a href="#" id="abc" target="iframe_b">View Link</a>
 <script>
-
-function openWin() {
+  document.getElementById("myLink").onclick = function() {
     var x = document.getElementById("xx").value;
-    var y =document.getElementById("xy").value;
-    window.open("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D'https%3A%2F%2Frealmofthemadgod.appspot.com%2Fchar%2Ffame%3FaccountId%3D" + y + "%26charId%3D" + x +"'&diagnostics=true");
-}
+    var y = document.getElementById("xy").value;
+    document.getElementById("abc").href="https://realmofthemadgod.appspot.com/char/fame?accountId=" + y + "&charId=" + x ; 
+    return false;
+  };
 </script>
+
+<iframe id="gl" src="http://i.imgur.com/g2bqjZ2.png" name="iframe_b" frameborder="0" width=300 height=100></iframe>
 </head>
-<input id="yy" type="button" value="Show Grave" onclick="openWin()">
 <h5>You can see the account Id's of anyone on leader the boards</h5>
 <p><b><small>Give it a try? </b><i>All you need to do, is click a button (All, Month, or Week) and look for <br><strong><strong>"FameListElem accountId=_________"</strong></strong></i></small></p>
 <style>
@@ -25,11 +29,21 @@ background-color:#FADF00;
 border:2px solid #FFBA10;
 border-radius:25px;
 }
-a:link, a:visited {
+a:link {
     display: inline;
     font-weight: bold;
     color: #FFFFFF;
     background-color: #98bf29;
+    width: 120px;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+}
+a:visited {
+    display: inline;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #FFbf29;
     width: 120px;
     text-align: center;
     padding: 4px;
@@ -65,22 +79,37 @@ font-family:myFirstFont;
 #yy
 {
 color: #A00000;
+float:left;
 } 
 body
 {
 background-color:#FF8800;
 }
-iframe
+#gg
 {
 background-color:#FF9800;
 border:1px solid #FFA000;
 float:left;
+position:relative;
+top:-4px;
+}
+#gl
+{
+background-color:#D9Cf09;
+border:1px solid #FFA000;
+position:relative;
+left:100px;
+top:-40px;
 }
 </style>
 <body>
-<iframe src="http://i.imgur.com/g2bqjZ2.png" name="iframe_a" frameborder="0"></iframe>
+<iframe id="gg" src="http://i.imgur.com/g2bqjZ2.png" name="iframe_a" frameborder="0"></iframe>
 <p><a href="https://realmofthemadgod.appspot.com/fame/list?timespan=week&charId=-1" target="iframe_a">Weekly</a></p>
 <p><a href="https://realmofthemadgod.appspot.com/fame/list?timespan=month&charId=-1" target="iframe_a">Monthly</a></p>
 <p><a href="https://realmofthemadgod.appspot.com/fame/list?timespan=all&charId=-1" target="iframe_a">All time</a></p>
+</body>
+<body>
+<br><br><br>
+<i><b><small><small>By Bes</b></i></small></small>
 </body>
 </html>
