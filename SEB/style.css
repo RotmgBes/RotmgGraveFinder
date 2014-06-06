@@ -1,83 +1,198 @@
-h2
-{
-text-shadow: 1px 0px #ff0000;
-background-color:#FADF00;
-border:2px solid #FFBA10;
-border-radius:25px;
+h2 {
+    text-align:center;
+    text-shadow: 0px 0px 6px #00FFFF;
+    background-color:#aaB5C9;
+    border:6px outset #00BAFF;
+    border-radius:25px;
+    margin-right:30%;
+    margin-left:30%;
 }
-a:link {
+#myLink:link {
     display: inline;
     font-weight: bold;
+    border:3px outset #00BAFF;
+    border-radius:25px;
+    text-shadow: 0px 0px 6px #000000;
     color: #FFFFFF;
-    background-color: #98bf29;
+    background-color: #000f29;
     width: 120px;
     text-align: center;
     padding: 4px;
     text-decoration: none;
 }
-a:visited {
+#myLink:visited {
     display: inline;
     font-weight: bold;
     color: #FFFFFF;
-    background-color: #FFbf29;
+    background-color: #000f29;
     width: 120px;
     text-align: center;
     padding: 4px;
     text-decoration: none;
 }
-
-a:hover, a:active {
-    background-color: #7A991A;
+#myLink:hover {
+    background-color: #999999;
 }
-
-h2 
-{
-text-align:center;
+#myLink:active {
+    background-color: #CCCCCC;
 }
-
-h6 
-{
-text-align:center;
+#abc:link {
+    display: inline;
+    font-weight: bold;
+    border:3px outset #FFFFFF;
+    text-shadow: 0px 0px 6px #FFFFFF;
+    color: #FFFFFF;
+    border-radius:10px;
+    background-color: #000f29;
+    width: 120px;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
 }
-
-h5
-{
-text-align:center;
-background-color:#FFDD00;
-border:4px solid #FFBA10;
-outline:6px solid #FFaa00;
-outline-offset:0px;
+#abc:visited {
+    display: inline;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #000f29;
+    width: 120px;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
 }
-
-div
-{
-background-color:#FABF00;
-border:7px solid #FFA000;
-text-align:center;
+#abc:hover {
+    background-color: #aa1001;
 }
-
-#yy
-{
-color: #A00000;
-float:left;
-} 
-body
-{
-background-color:#FF8800;
+#abc:active {
+    background-color: #FF0000;
 }
-#gg
-{
-background-color:#FF9800;
-border:1px solid #FFA000;
-float:left;
-position:relative;
-top:-4px;
+#ra:link {
+    display: inline;
+    font-weight: bold;
+    border:3px outset #FFFFFF;
+    text-shadow: 0px 0px 6px #FFFFFF;
+    color: #FFFFFF;
+    border-radius:10px;
+    background-color: #000f29;
+    width: 120px;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
 }
-#gl
-{
-background-color:#D9Cf09;
-border:1px solid #FFA000;
-position:relative;
-left:100px;
-top:-40px;
+#ra:visited {
+    display: inline;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #000f29;
+    width: 120px;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+}
+#ra:hover {
+    background-color: #aa10bb;
+}
+#ra:active {
+    background-color: #FF00DD;
+}
+#ro:link {
+    display: inline;
+    font-weight: bold;
+    border:3px outset #FFFFFF;
+    text-shadow: 0px 0px 6px #FFFFFF;
+    color: #FFFFFF;
+    border-radius:10px;
+    background-color: #000f29;
+    width: 120px;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+}
+#ro:visited {
+    display: inline;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #000f29;
+    width: 120px;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+}
+#ro:hover {
+    background-color: #aa10bb;
+}
+#ro:active {
+    background-color: #FF00DD;
+}
+#re:link {
+    display: inline;
+    font-weight: bold;
+    border:3px outset #FFFFFF;
+    text-shadow: 0px 0px 6px #FFFFFF;
+    color: #FFFFFF;
+    border-radius:10px;
+    background-color: #000f29;
+    width: 120px;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+}
+#re:visited {
+    display: inline;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #000f29;
+    width: 120px;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+}
+#re:hover {
+    background-color: #aa10bb;
+}
+#re:active {
+    background-color: #FF00DD;
+}
+h6 {
+    text-align:center;
+}
+h5 {
+    text-align:center;
+    background-color:#ddc300;
+    border:4px outset #DDBB00;
+    border-radius:25px;
+}
+div {
+    background-color:#DDBB00;
+    border:2px solid #bb9900;
+    text-align:center;
+    border-radius:9px;
+}
+body {
+    background-color:#C9DD0B;
+}
+#gg {
+    background-color:#dd9800;
+    border:3px solid #cc9800;
+    border-radius:7px;
+    float:left;
+    position:relative;
+    top:-4px;
+}
+#gl {
+    background-color:#00A0FF;
+    border:1px groove #0cACFF;
+    border-radius:5px;
+    position:relative;
+    left:100px;
+    top:-40px;
+}
+#xx {
+    background-color:#DFCDCD;
+    border:1px groove #DFCDCD;
+    border-radius:4px;
+}
+#xy {
+    background-color:#DFCDCD;
+    border:1px groove #DFCDCD;
+    border-radius:4px;
 }
